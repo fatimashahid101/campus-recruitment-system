@@ -18,7 +18,7 @@ const SplashScreen = ({navigation}) => {
 
     return (
       <View style={styles.container}>
-          <StatusBar backgroundColor='red' barStyle="light-content"/>
+          <StatusBar backgroundColor='blue' barStyle="light-content"/>
         <View style={styles.header}>
             <Animatable.Image 
                 animation="bounceIn"
@@ -36,12 +36,12 @@ const SplashScreen = ({navigation}) => {
         >
             <Text style={[styles.title, {
                 color: colors.text
-            }]}>Save a life. Give blood!</Text>
+            }]}>Failure is the oppurtunity to begin again with more intelligently!</Text>
             <Text style={styles.text}>Sign in with account</Text>
             <View style={styles.button}>
             <TouchableOpacity onPress={()=>navigation.navigate('SignInScreen')}>
                 <LinearGradient
-                    colors={['red', 'orange']}
+                    colors={['blue', 'green']}
                     style={styles.signIn}
                 >
                     <Text style={styles.textSign}>Student</Text>
@@ -52,9 +52,9 @@ const SplashScreen = ({navigation}) => {
                     />
                 </LinearGradient>
             </TouchableOpacity>
-            <TouchableOpacity onPress={()=>navigation.navigate('SignInScreen')}>
+            <TouchableOpacity onPress={()=>navigation.navigate('CompanySigninScreen')}>
                 <LinearGradient
-                    colors={['red', 'orange']}
+                    colors={['blue', 'green']}
                     style={styles.signIn}
                 >
                     <Text style={styles.textSign}>Company</Text>
@@ -78,7 +78,7 @@ const height_logo = height * 0.28;
 const styles = StyleSheet.create({
   container: {
     flex: 1, 
-    backgroundColor: 'red'
+    backgroundColor: 'blue'
   },
   header: {
       flex: 2,
@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
       height: height_logo
   },
   title: {
-      color: 'red',
+      color: 'blue',
       fontSize: 30,
       fontWeight: 'bold'
   },
